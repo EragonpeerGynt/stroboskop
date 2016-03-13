@@ -48,6 +48,10 @@ window.addEventListener('load', function() {
 	}
 	
 	var zagon = function(event) {
+		
+		var minimum = document.querySelector("#min").value;
+		var maximum = document.querySelector("#max").value;
+		
 		vrednosti = [];
 		var barve = document.querySelectorAll("#barve > button");
 		for (i = 0; i < barve.length; i++) {
@@ -55,8 +59,8 @@ window.addEventListener('load', function() {
 			vrednosti.push(barva.innerHTML);
 		}
 		
-		minCas = 1000;
-		maxCas = 1000;
+		minCas = minimum;
+		maxCas = maximum;
 		spremeniBarvo(0);
 		
 		var start = document.querySelector("#start");
