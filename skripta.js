@@ -49,8 +49,8 @@ window.addEventListener('load', function() {
 	
 	var zagon = function(event) {
 		
-		var minimum = document.querySelector("#min").value;
-		var maximum = document.querySelector("#max").value;
+		var minimum = parseInt(document.querySelector("#min").value);
+		var maximum = parseInt(document.querySelector("#max").value);
 		
 		vrednosti = [];
 		var barve = document.querySelectorAll("#barve > button");
